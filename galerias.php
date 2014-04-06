@@ -3,22 +3,17 @@ $vista_actual = "galerias";
 require_once("ct-header.php");
 $array_estilos = array("bg-grad-azul", "bg-grad-rojo", "bg-grad-negro");
 ?>
-		<link rel="stylesheet" href="galerias/vlb_files/vlightbox1.css" type="text/css" />
-		<link rel="stylesheet" href="galerias/vlb_files/visuallightbox.css" type="text/css" media="screen" />
-        <script src="galerias/vlb_engine/jquery.min.js" type="text/javascript"></script>
-		<script src="galerias/vlb_engine/visuallightbox.js" type="text/javascript"></script>
-    <div class="container marketing">
-    
-    
-    <div class="row">
-
+<link rel="stylesheet" href="galerias/vlb_files/vlightbox1.css" type="text/css" />
+<link rel="stylesheet" href="galerias/vlb_files/visuallightbox.css" type="text/css" media="screen" />
+<script src="galerias/vlb_engine/jquery.min.js" type="text/javascript"></script>
+<script src="galerias/vlb_engine/visuallightbox.js" type="text/javascript"></script>
+<div class="container marketing">
+  <div class="row">
     <div class="" style="position: relative;">
-        <div class="titulo-enorme-oscuro color-jya"><span class="color-jya-rojo">G</span>ALERÍAS</div>
-        <span style="padding: 10px 20px; position: absolute; top: 0; right: 20px;">
-            <img src="img/jean_logo_small.png" width="80" />
-        </span>
-<hr class="faded"/>
-        <div class="row"  style="margin: 0 0 0 30px; " >
+      <div class="titulo-enorme-oscuro color-jya"><span class="color-jya-rojo">G</span>ALERÍAS</div>
+      <span style="padding: 10px 20px; position: absolute; top: 0; right: 20px;"> <img src="img/jean_logo_small.png" width="80" /> </span>
+      <hr class="faded"/>
+      <div class="row"  style="margin: 0 0 0 30px; " >
         <?PHP /* if(isset($_GET["GL"]))
         {
         ?>
@@ -83,18 +78,13 @@ $array_estilos = array("bg-grad-azul", "bg-grad-rojo", "bg-grad-negro");
         <?PHP
         } */
         ?>
-    
-        </div>
-    
+      </div>
     </div>
-    </div>
-    </div>
-    
-    
-    <br />
-    
+  </div>
+</div>
+<br />
 <hr class="faded" />
-    <br />
+<br />
 <?PHP 
 require_once('ct-footer-pre.php');
 require_once('ct-footer.php'); ?>
