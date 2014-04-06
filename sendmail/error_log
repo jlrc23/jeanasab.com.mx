@@ -1,0 +1,8 @@
+[25-Feb-2013 14:50:47] PHP Warning:  include_once(../captcha/securimage/securimage.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/portales/public_html/portal13/librerias/sendmail/index.php on line 7
+[25-Feb-2013 14:50:47] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '../captcha/securimage/securimage.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/portales/public_html/portal13/librerias/sendmail/index.php on line 7
+[25-Feb-2013 14:50:47] PHP Fatal error:  Class 'Securimage' not found in /home/portales/public_html/portal13/librerias/sendmail/index.php on line 8
+[25-Feb-2013 14:52:06] PHP Warning:  include_once(../captcha/securimage/securimage.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/portales/public_html/portal13/librerias/sendmail/index.php on line 7
+[25-Feb-2013 14:52:06] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '../captcha/securimage/securimage.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/portales/public_html/portal13/librerias/sendmail/index.php on line 7
+[25-Feb-2013 14:52:06] PHP Fatal error:  Class 'Securimage' not found in /home/portales/public_html/portal13/librerias/sendmail/index.php on line 8
+[25-Feb-2013 15:30:16] PHP Parse error:  syntax error, unexpected T_STRING in /home/portales/public_html/portal13/librerias/sendmail/index.php on line 34
+[25-Feb-2013 15:51:23] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/portales/public_html/portal13/librerias/sendmail/index.php on line 24
