@@ -2,7 +2,7 @@
 session_start();
 
 $vista_actual = "contacto"; 
-require_once("ct-header.php");
+require_once("includes/header.php");
 
 function getRealIP()
 {
@@ -80,8 +80,8 @@ if($_POST["token"] == $_SESSION["etoken"])
     
     
     
-include("sendmail/class.phpmailer.php");
-include("sendmail/class.smtp.php");
+include("includes/sendmail/class.phpmailer.php");
+include("includes/sendmail/class.smtp.php");
 
 
 	$destino = 	explode(";" , "jeanasab@jeanasab.com.mx;jlrc23@gmail.com");
@@ -135,8 +135,7 @@ include("sendmail/class.smtp.php");
 
 
     
-    if($correcto)
-    {
+    if($correcto) {
         echo '<script>alert("Su mensaje ha sido enviado satisfactoriamente")</script>';
     }
     
@@ -214,6 +213,4 @@ include("sendmail/class.smtp.php");
 <br />
 <hr class="faded" />
 <br />
-<?PHP 
-require_once('ct-footer-pre.php');
-require_once('ct-footer.php'); ?>
+<?php include("includes/footer.php") ?>

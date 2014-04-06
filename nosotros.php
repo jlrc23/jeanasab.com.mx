@@ -1,6 +1,6 @@
 <?PHP
 $vista_actual = "nosotros"; 
-require_once("ct-header.php");
+require_once("includes/header.php");
 ?>
 
 <div class="container marketing">
@@ -29,6 +29,4 @@ require_once("ct-header.php");
 <br />
 <hr class="faded" />
 <br />
-<?PHP 
-require_once('ct-footer-pre.php');
-require_once('ct-footer.php'); ?>
+<?php include("includes/footer.php"); ?>

@@ -1,4 +1,4 @@
-<?php require_once("ct-header-index.php"); ?>
+<?php $vista_actual=""; include("includes/header.php"); ?>
 <div class="container marketing">
   <hr class="fadded" />
   <div class="row slider-proyectos"> 
@@ -55,42 +55,4 @@
 </div>
 <hr class="faded" />
 <br />
-<?PHP 
-require_once('ct-footer-pre.php');
-require_once('ct-footer.php'); ?>
-<script src="js/jquery-ui-1.9.2.custom.min.js"></script> 
-<script src="js/bootstrap-transition.js"></script> 
-<script src="js/bootstrap-alert.js"></script> 
-<script src="js/bootstrap-modal.js"></script> 
-<script src="js/bootstrap-dropdown.js"></script> 
-<script src="js/bootstrap-scrollspy.js"></script> 
-<script src="js/bootstrap-tab.js"></script> 
-<script src="js/bootstrap-tooltip.js"></script> 
-<script src="js/bootstrap-popover.js"></script> 
-<script src="js/bootstrap-button.js"></script> 
-<script src="js/bootstrap-collapse.js"></script> 
-<script src="js/bootstrap-carousel.js"></script> 
-<script src="js/bootstrap-typeahead.js"></script> 
-<script src="js/jquery.hoverizr.min.js"></script> 
-<script src="js/modernizr.custom.79639.js"></script> 
-<script src="js/jquery.windy.js"></script> 
-<script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel();
-        })
-      }(window.jQuery);
-      
-    $(document).ready(function()
-    {
-        $('.greyScale').hoverizr();
-        
-
-jQuery('#default_slider').jbhSlider();
-	   
-    });
-    </script> 
-<script src="js/holder/holder.js"></script>
-</body>
-</html>
+<?php include('includes/footer.php'); ?>

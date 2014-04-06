@@ -42,6 +42,10 @@
 <link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+
+
+
+
 </head>
 
 <body>
@@ -62,9 +66,6 @@
             <li><a href="index.php">Inicio</a></li>
             <li class="active"><a href="nosotros.php">Nosotros</a></li>
             <li><a href="servicios.php">Servicios</a></li>
-            <?PHP if($contador_galerias > 0) {	?>
-            <li><a href="galerias.php">Galerías</a></li>
-            <?PHP }	?>
             <li><a href="contacto.php">Contacto</a></li>
           </ul>
         </div>
@@ -82,19 +83,15 @@
 <div class="row menu-grande-bg">
   <div class="container menu-grande"> <a href="index.php"> <img src="img/jean_logo_spaced.png" border="0"  ></a>
     <ul class="items-menu-grande">
-      <li><a href="index.php" >Inicio</a></li>
+      <li><a href="index.php" <?PHP if($vista_actual == "") { echo ' class="active" '; } ?>>Inicio</a></li>
       <li><a href="nosotros.php" <?PHP if($vista_actual == "nosotros") { echo ' class="active" '; } ?>>Nosotros</a></li>
       <li><a href="servicios.php" <?PHP if($vista_actual == "servicios") { echo ' class="active" '; } ?>>Servicios</a></li>
-      <?PHP if($contador_galerias > 0) {	?>
-      <li><a href="galerias.php" <?PHP if($vista_actual == "galerias") { echo ' class="active" '; } ?>>Galerías</a></li>
-      <?PHP }	?>
       <li><a href="contacto.php" <?PHP if($vista_actual == "contacto") { echo ' class="active" '; } ?>>Contacto</a></li>
     </ul>
   </div>
 </div>
 
-<!-- Carousel
-    ================================================== -->
+<!-- Carousel ================================================== -->
 <div id="myCarousel" class="carousel slide" >
   <div class="carousel-inner">
     <div class="item active"> <img src="img/slides/slide-01.jpg" alt="">

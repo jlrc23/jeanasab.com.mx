@@ -1,11 +1,6 @@
 <?PHP
 $vista_actual = "servicios"; 
-require_once("ct-header.php");
-?>
-<link rel="stylesheet" href="galerias/vlb_files/vlightbox1.css" type="text/css" />
-<link rel="stylesheet" href="galerias/vlb_files/visuallightbox.css" type="text/css" media="screen" />
-<script src="galerias/vlb_engine/jquery.min.js" type="text/javascript"></script>
-<script src="galerias/vlb_engine/visuallightbox.js" type="text/javascript"></script>
+require_once("includes/header.php"); ?>
 
 <div class="container marketing">
   <div class="row">
@@ -118,14 +113,6 @@ require_once("ct-header.php");
   </div>
 </div>
 <br />
-<script src="galerias/vlb_engine/thumbscript1.js" type="text/javascript"></script> 
-<script src="galerias/vlb_engine/vlbdata1.js" type="text/javascript"></script>
-<style>
-                #vlightbox1 .vlightbox1 div { height: 255px;}
-                #vlightbox1 .vlightbox1 img { border: 1px #ddd solid;}
-            </style>
 <hr class="faded" />
 <br />
-<?PHP 
-require_once('ct-footer-pre.php');
-require_once('ct-footer.php'); ?>
+<?php include("includes/footer.php"); ?>
