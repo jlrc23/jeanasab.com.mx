@@ -1,6 +1,5 @@
 <?PHP
 session_start();
-
 $vista_actual = "contacto"; 
 require_once("includes/header.php");
 
@@ -9,7 +8,7 @@ function getRealIP()
  
    if( $_SERVER['HTTP_X_FORWARDED_FOR'] != '' )
    {
-      $client_ip = 
+      $client_ip =  
          ( !empty($_SERVER['REMOTE_ADDR']) ) ? 
             $_SERVER['REMOTE_ADDR'] 
             : 
@@ -57,9 +56,7 @@ function getRealIP()
             $_SERVER['REMOTE_ADDR'] 
             : 
             ( ( !empty($_ENV['REMOTE_ADDR']) ) ? 
-               $_ENV['REMOTE_ADDR'] 
-               : 
-               "unknown" );
+               $_ENV['REMOTE_ADDR']  :  "unknown" );
    }
  
    return $client_ip;

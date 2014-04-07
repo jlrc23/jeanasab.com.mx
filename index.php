@@ -2,7 +2,7 @@
 <div class="container marketing">
   <hr class="fadded" />
   <div class="row slider-proyectos"> 
-    <script type="text/javascript" src="js/jbh_slider.js"></script>
+    
     <div class="span4">
       <div class="bg-grad-gris">
         <h2 class="slider-proyectos-titulo"><span class="color-jya-rojo">Ú</span>ltimos proyectos</h2>
