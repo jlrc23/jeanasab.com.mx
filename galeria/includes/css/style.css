@@ -1,0 +1,251 @@
+/**************************
+General Class
+**************************/
+html, body, table, select, input, textarea{font-family:Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color:#373737;}
+a {text-decoration:none; color: #21759b;}
+a:hover {text-decoration:none; color: #ff0000}
+.clear{clear:both; margin:0; padding:0}
+
+/** background image and color setting **/
+body {background: url(../images/background.jpg) 50% 40px no-repeat #000;}
+
+.name_box {position:absolute; z-index:9999; color:#fff; font-size:0.9em; background-color:#072850; border:3px solid #06203C; padding:5px; -moz-border-radius: 3px; -webkit-border-radius: 3px; display:none}
+
+
+/**************************
+Header Class
+**************************/
+.header {background:url(../images/header.gif) 0 0 repeat-x; height:40px; position: relative; z-index: 100;}
+a.logo {float:left; background:url(../images/logo.gif) 0 0 no-repeat; height:40px; width:165px; display:block}
+.header .top , .content_wrapper {width:960px; margin:0 auto}
+
+/** mode btn **/
+ul.view_mode {float:left; margin:6px 0 0 10px}
+ul.view_mode li {float:left; padding-left:5px}
+ul.view_mode li a{background:url(../images/view_mode.gif) no-repeat; height:27px; width:28px; display:block}
+ul.view_mode li.grid_1 a {background-position: 0 -27px}
+ul.view_mode li.grid_2 a {background-position: 0 -81px}
+ul.view_mode li.line_1 a {background-position: 0 -135px}
+ul.view_mode li.line_2 a {background-position: 0 -189px}
+ul.view_mode li.grid_1 a:hover , ul.view_mode li.grid_1 a.current {background-position: 0 0px}
+ul.view_mode li.grid_2 a:hover , ul.view_mode li.grid_2 a.current {background-position: 0 -54px}
+ul.view_mode li.line_1 a:hover , ul.view_mode li.line_1 a.current {background-position: 0 -108px}
+ul.view_mode li.line_2 a:hover , ul.view_mode li.line_2 a.current {background-position: 0 -162px}
+
+/** category setting **/
+.category {float:right; position:relative}
+.category span.label {}
+.category .box {background:url(../images/category_box.gif) right -25px no-repeat; height:25px; margin-top:8px; float:left; padding-right:4px}
+.category .box .current {background:url(../images/category_box.gif) 0 0 no-repeat; height:25px; line-height:25px; padding:0 6px 0 86px; float:right}
+.category .box .current a {background:url(../images/tri.gif) right 7px no-repeat; padding-right:21px; color:#555}
+.category .box .current a:hover {background-position: right -15px; color:#222}
+
+/** category list **/
+.show_cat {}
+ul.category_list {position:absolute; right:0; top: 40px; margin:0; width:200px; background:url(../images/category_list.gif) top repeat-x #e7e7e7}
+ul.category_list li {padding-top:5px}
+ul.category_list li:hover {background-color:#d5d5d5}
+ul.category_list li.current {background-color:#d5d5d5}
+ul.category_list li.current a{font-weight:bold}
+ul.category_list li a {line-height:25px; padding-left:20px; display:block; color:#555}
+ul.category_list li a:hover {color:#222}
+
+
+/**************************
+photo class
+**************************/
+.gallery_wrapper{padding-top:100px; width:100%}
+
+/** thumbnail class **/
+.photo{float:left;}
+.thumb{position:relative; z-index:1; background-position:40% 40%; background-repeat:no-repeat; cursor:pointer}
+
+
+/**************************
+page no. class
+**************************/
+.page_area{display:block; margin:50px 0 0 0}
+.page_area a , .page_area span
+{padding:3px; margin-right:4px; -moz-border-radius:3px; -khtml-border-radius:3px; -webkit-border-radius:3px; border-radius: 3px;}
+.page_area a:hover {background-color:#999 ; color:#fff}
+.page_area span.current
+{padding:3px; margin-left:4px; border:1px solid #777; -moz-border-radius:3px; -khtml-border-radius:3px; -webkit-border-radius:3px; border-radius: 3px;}
+.page_area span.dot {border:0; margin:0; padding:10px 0 0 0}
+
+/**************************
+page no. class
+**************************/
+.loading {margin:150px auto 0 auto; background:#1F1F1F; text-align:center; width:36px; height:26px; padding-top:10px; -moz-border-radius:10px; -khtml-border-radius:10px; -webkit-border-radius:10px; border-radius:10px;}
+
+/**************************
+admin class
+**************************/
+.admin_top_btn {float:right; line-height:20px; margin:10px}
+.edit_photo {float:left; height:220px; width:162px; padding:10px 5px 10px 5px ; margin:5px; background-color:#e9e9e9; position:relative; -moz-border-radius:6px; -khtml-border-radius:6px; -webkit-border-radius:6px; border-radius:6px}
+.edit_photo img {border:3px solid #fff}
+.edit_photo table {width:100%}
+.edit_photo table td {height:30px; text-align:left}
+.edit_photo table td.pic {height:170px; vertical-align:middle; text-align:center}
+a.del_photo {position:absolute; top:-3px; right:-6px; background:url(../images/admin/cross1.png) 0 0 no-repeat; height:16px; width:16px; display:block}
+a.del_photo:hover {background-image:url(../images/admin/cross2.png)}
+
+ul.pic_info li{padding-bottom:10px}
+
+.cat_select_box {border:1px solid #dddddd; padding:2px; overflow:auto; width:90%; height:90px; margin-left:20px}
+.form_table .cat_select_box{width:70%; margin-left:0; height:auto; max-height:200px}
+
+.admin_loading {background:url(../images/admin/loading.gif) 0 0 no-repeat; height:16px; margin:2px; padding-left:30px}
+.uploading {background:url(../images/admin/uploading.gif) 0 0 no-repeat; height:22px; margin-top:10px; padding-left:135px; color:#FF3C1A}
+
+/****** system message ******/
+.notice_box {padding-bottom:10px; margin-top:-5px}
+.common_table td .notice_box{width:150px; padding:5px 0 0 0; margin-top:0}
+.notice_box div{padding:5px 10px 5px 36px; line-height:1.5em; -moz-border-radius: 6px; -webkit-border-radius:6px;}
+.alert {background:url(../images/admin/error.gif) 10px 6px no-repeat #fffbcc; color:#666452;}
+.success {background:url(../images/admin/success.gif) 10px 6px no-repeat #e5ffce; color:#6a6668;}
+
+/**************************
+Admin Box Style
+**************************/
+.admin_box {background:url(../images/admin/table_header_s.gif) 0 0 repeat-x #fff; margin-top:50px; border:2px solid #bbb; -moz-border-radius:8px; -khtml-border-radius:8px; -webkit-border-radius:8px; border-radius: 8px; margin-bottom:20px}
+.admin_box_header {height:32px;}
+.admin_box_header h3 {font-size:1.5em; margin:0; padding:6px 0 0 12px}
+
+.content_box{}
+.admin_content {padding:20px 15px 15px 15px}
+
+
+/**************************
+table class
+**************************/
+.common_table{width:100%; background-color:#fff; border-collapse:separate;border-spacing: 0px; *border-collapse: expression('separate', cellSpacing = '0px'); border:1px solid #cbcbcb; border-bottom:0}
+.common_table tr th , .common_table tr td{border-bottom:1px solid #cbcbcb; vertical-align:top; line-height:1.4em}
+.common_table tr.no_border td{border-bottom:1px solid #ffffff}
+.common_table tr.alt_row td {background-color:#f8f8f8}
+
+.form_table {width:100%}
+.form_table th {width:20%}
+.form_table th , .form_table td {padding-bottom:25px; vertical-align:top; line-height:1.5em}
+
+/** table tool setting start **/
+.table_top_left_tool {float:left}
+.table_top_right_tool {float:right}
+.table_bottom_left_tool {float:left; padding-top:15px}
+.table_bottom_right_tool {float:right; padding-top:15px}
+/** table tool setting end **/
+
+.table_bottom_right_tool .page_area {margin-top:5px}
+.common_table thead tr th{background:#ececec; text-align:left; padding-left:4px; height:30px; vertical-align:middle; *padding-top:2px; font-weight:bold}
+.common_table tr td {padding:6px 4px 6px 4px}
+
+.table_left_tool {float:left; margin-top:15px;}
+.table_right_tool {float:right; padding-bottom:0px; *padding-bottom:10px}
+.table_delete_tool {float:right; padding-bottom:0px; *padding-bottom:10px}
+.col_filter {float:left; margin-right:10px}
+.table_left_tool span{!important vertical-align:middle}
+
+a.sort_asc {background:url(../images/sort.gif) no-repeat 100% 2px; padding-right:13px;}
+a:hover.sort_asc {background:url(../images/sort.gif) no-repeat 100% -17px}
+a.sort_dec {background:url(../images/sort.gif) no-repeat 100% -55px; padding-right:13px;}
+a:hover.sort_dec {background:url(../images/sort.gif) no-repeat 100% -36px}
+
+.num_col {width:25px}
+.num2_col {width:110px}
+.image_col {width:170px}
+.act_col {width:80px}
+
+
+/**************************
+input class
+**************************/
+input.pic_name {width:70%}
+input.form_short {width:60px}
+
+
+/**************************
+admin page no. class
+**************************/
+.admin_box .page_area{display:block}
+.admin_box .page_area a , .admin_box .page_area span
+{padding:5px; margin-left:3px; border:1px solid #d9d9d9;-moz-border-radius:3px; -khtml-border-radius:3px; -webkit-border-radius:3px; border-radius: 3px;}
+.admin_box .page_area .current {background:#f3f3f3}
+.admin_box .page_area span.dot {border:0; margin:0; padding:10px 0 0 0}
+
+
+/**************************
+search class
+**************************/
+.admin_box .searchbox {
+	background:url(../images/admin/search_s.gif) no-repeat;
+	width:209px;
+	height:17px;
+	display:block;
+	float:left;
+	padding:2px 0 2px 2px;
+	border:1px solid #cbcbcb;
+	margin-bottom:10px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;}
+.admin_box .searchbox .textfield  {background:none; border:0px; width:185px; float:left; margin-right:2px; padding-left:2px;}
+.admin_box .searchbox .button {background:none; border:0px; width:18px; height:18px; cursor:pointer; float:left; margin-top:1px;}
+
+
+/**************************
+table class
+**************************/
+.common_table thead tr th{background-color:#ececec;}
+span.editable {cursor:pointer}
+
+
+/**************************
+manage btn
+**************************/
+a.del_btn {background:url(../images/admin/manage.gif) 0 -70px no-repeat; height:20px; width:20px; display:block; float:left; margin-right:15px}
+a.del_btn:hover {background-position: 0 -46px}
+a.eidt_btn {background:url(../images/admin/manage.gif) 0 -21px no-repeat; height:20px; width:20px; display:block; float:left; margin-right:15px}
+a.eidt_btn:hover {background-position: 0 0}
+
+a.addnew {background:url(../images/admin/addcancel.png) no-repeat 4px -56px;display:block; padding-left:22px; margin-top:7px; height:15px;}
+a.addnew:hover {background-position: 4px -84px}
+
+/**************************
+submit btn class
+**************************/
+.action_btn {text-align:center; margin: 0 auto}
+
+.action_row {text-align:center; margin: 0 auto; padding-top:30px}
+
+input.action_btn {margin:5px 5px 15px 5px; color:#ffffff; width:65px; cursor:pointer; border:2px solid;  -moz-border-radius:6px; -khtml-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; padding:3px 0}
+
+input.submit {background:#323232; border-color:#2f2f2f}
+input:hover.submit {background:#888; border-color:#999}
+
+input.cancel {background:#aaa; border-color:#afafaf}
+input:hover.cancel {background:#888; border-color:#999}
+
+
+/**************************
+admin_tab
+**************************/
+ul.admin_tab {margin-left:5px}
+ul.admin_tab li {line-height:25px; border:2px solid #ccc; border-bottom:0; float:left; margin:5px 0 0 7px; background-color:#333; cursor:pointer ;-moz-border-radius-topright:6px; border-top-right-radius:6px;-moz-border-radius-topleft:6px; border-top-left-radius:6px;}
+ul.admin_tab li:hover {background-color:#ffffff}
+ul.admin_tab li.current {background-color:#ffffff; font-weight:bold; padding: 0 10px 0 10px}
+ul.admin_tab li a {display:block ; color:#ffffff; padding: 0 10px 0 10px}
+ul.admin_tab li a:hover {color:#ff0000}
+
+
+/**************************
+login class
+**************************/
+.login {background:url(../images/admin/box_bg.gif) bottom repeat-x #e7e7e7; width: 382px; margin: 90px auto 30px auto; padding: 20px; -moz-border-radius:8px;-webkit-border-radius:8px;overflow: auto; border:2px solid #8f8f8f; *padding-bottom:5px}
+.login h2 {background: url(../images/admin/login.gif) 0 0 no-repeat; width: 54px; height: 25px; text-indent: -9999px; margin: 0 0 10px 0; padding: 0;}
+.login p{margin: 0 0 17px 0; padding: 0;}
+.login p label{display: block; width: 80px; float: left; font-weight: bold; margin: 12px 0px 0px 0px;}
+.login p input.login_field{width: 278px; padding: 6px 4px; -moz-border-radius: 3px; -webkit-border-radius: 3px; color: #444; font-size: 12px; background: #f9f9f9; border: 1px solid #cccccc; margin-left:10px}
+.login p.remember_me {float:left;margin:10px 0 0 0}
+.login .action_btn {float:right}
+
+
