@@ -4,9 +4,9 @@
 
 $cfg['photo_folder_path'] = "../../photo"; 
 $cfg['photo_folder_http'] = "http://www.jeanasab.com.mx/galeria/photo";
-$cfg['page_title'] = "Web solution - Easy gallery (no database required)";
-$cfg['no_file_msg'] = "No file";
-$cfg['no_folder_msg'] = "No folder";
+$cfg['page_title'] = "Administración de proyecto";
+$cfg['no_file_msg'] = "Archivo no encontrado";
+$cfg['no_folder_msg'] = "Directorio no encontrado";
 
 // admin login info
 $cfg['user_login'] = "admin";
@@ -21,16 +21,16 @@ $cfg['large_default_width'] = 900;
 //set enlarged height
 $cfg['large_default_height'] = 600;
 
-$cfg['js_msg']['remove_image_warn_msg'] = "Are you sure to remove this image?";
-$cfg['js_msg']['editing_warn_msg'] = "You are currently editing a file, please finish that one first.";
-$cfg['js_msg']['leave_editing_warn_msg'] = "You are currently editing a file. Abandon changes?";
-$cfg['js_msg']['remove_cat_msg'] = "Are you sure to remove this folder? All files inside this folder will be removed permanently";
-$cfg['js_msg']['invalid_name_msg'] = "Invalid Name";
-$cfg['js_msg']['select_folder_msg'] = "Please select a folder";
-$cfg['js_msg']['select_image_msg'] = "Please select an image";
-$cfg['js_msg']['delete_selected_image'] = "Are you sure to remove the selected image(s)?";
-$cfg['js_msg']['upload_image_msg'] = "Uploading, please wait...";
-$cfg['js_msg']['loading_msg'] = "Loading...";
+$cfg['js_msg']['remove_image_warn_msg'] = "¿Está seguro de eliminar esta imagen?";
+$cfg['js_msg']['editing_warn_msg'] = "En este momento está editando un archivo, por favor terminar esa primero.";
+$cfg['js_msg']['leave_editing_warn_msg'] = "En este momento está editando un archivo sin hacer cambios.?";
+$cfg['js_msg']['remove_cat_msg'] = "¿Está seguro de eliminar esta carpeta Todos los archivos dentro de esta carpeta se eliminarán de forma permanente";
+$cfg['js_msg']['invalid_name_msg'] = "Nombre no válido";
+$cfg['js_msg']['select_folder_msg'] = "Por favor, seleccione una carpeta";
+$cfg['js_msg']['select_image_msg'] = "Seleccione una imagen";
+$cfg['js_msg']['delete_selected_image'] = "¿Está seguro de eliminar la imagen (s) seleccionada?";
+$cfg['js_msg']['upload_image_msg'] = "Subiendo, por favor espere ...";
+$cfg['js_msg']['loading_msg'] = "Cargando ...";
 
 $cfg['memory_limit'] = "200M";
 $cfg['upload_max_filesize'] = "10M";

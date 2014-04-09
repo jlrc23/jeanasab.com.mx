@@ -59,10 +59,10 @@
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <nav class="nav-collapse collapse">
               <ul class="nav">
-                <li><a href="index.php" <?PHP if($vista_actual == "") { echo ' class="active" '; } ?>>Inicio</a></li>
-                <li><a href="nosotros.php" <?PHP if($vista_actual == "nosotros") { echo ' class="active" '; } ?>>Nosotros</a></li>
-                <li><a href="servicios.php" <?PHP if($vista_actual == "servicios") { echo ' class="active" '; } ?>>Servicios</a></li>
-                <li><a href="contacto.php" <?PHP if($vista_actual == "contacto") { echo ' class="active" '; } ?>>Contacto</a></li>
+                <li <?PHP if($vista_actual == "") { echo ' class="active" '; } ?>><a href="index.php" >Inicio</a></li>
+                <li <?PHP if($vista_actual == "nosotros") { echo ' class="active" '; } ?>><a href="nosotros.php" >Nosotros</a></li>
+                <li <?PHP if($vista_actual == "servicios") { echo ' class="active" '; } ?>><a href="servicios.php" >Servicios</a></li>
+                <li <?PHP if($vista_actual == "contacto") { echo ' class="active" '; } ?>><a href="contacto.php" >Contacto</a></li>
               </ul>
             </nav>
             <!--/.nav-collapse --> 
@@ -79,10 +79,10 @@
     <div class="row menu-grande-bg">
       <nav class="container menu-grande"> <a href="/"> <img src="img/jean_logo_spaced.png" border="0"  ></a>
         <ul class="items-menu-grande">
-          <li><a href="index.php" <?PHP if($vista_actual == "") { echo ' class="active" '; } ?>>Inicio</a></li>
-          <li><a href="nosotros.php" <?PHP if($vista_actual == "nosotros") { echo ' class="active" '; } ?>>Nosotros</a></li>
-          <li><a href="servicios.php" <?PHP if($vista_actual == "servicios") { echo ' class="active" '; } ?>>Servicios</a></li>
-          <li><a href="contacto.php" <?PHP if($vista_actual == "contacto") { echo ' class="active" '; } ?>>Contacto</a></li>
+          <li <?PHP if($vista_actual == "") { echo ' class="active" '; } ?>><a href="index.php" >Inicio</a></li>
+          <li <?PHP if($vista_actual == "nosotros") { echo ' class="active" '; } ?>><a href="nosotros.php">Nosotros</a></li>
+          <li <?PHP if($vista_actual == "servicios") { echo ' class="active" '; } ?>><a href="servicios.php">Servicios</a></li>
+          <li <?PHP if($vista_actual == "contacto") { echo ' class="active" '; } ?>><a href="contacto.php">Contacto</a></li>
         </ul>
       </nav>
     </div>
