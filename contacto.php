@@ -3,21 +3,15 @@ session_start();
 $vista_actual = "contacto"; 
 require_once("includes/header.php");
 
-
-if(isset($_POST["nombre"]) AND isset($_POST["correo"]) AND isset($_POST["telefono"]) AND isset($_POST["mensaje"]) AND isset($_POST["token"]))
-{
+if(isset($_POST["nombre"]) AND isset($_POST["correo"]) AND isset($_POST["telefono"]) AND isset($_POST["mensaje"]) AND isset($_POST["token"])){
 
 
-if($_POST["token"] == $_SESSION["etoken"])
-{
+if($_POST["token"] == $_SESSION["etoken"]){
 
     $mail_nombre    = $_POST["nombre"];
     $mail_correo    = $_POST["correo"];
     $mail_telefono  = $_POST["telefono"];
     $mail_mensaje   = $_POST["mensaje"];
-    
-    
-    
 include("includes/sendmail/class.phpmailer.php");
 include("includes/sendmail/class.smtp.php");
 
@@ -29,10 +23,10 @@ include("includes/sendmail/class.smtp.php");
 	$mensaje  .= "<b>Nombre: </b>" . utf8_decode($mail_nombre)."<br />";  
 	$mensaje .= "<b>Mail: </b>" . utf8_decode($mail_correo )."<br />";  
 	if($_POST["telefono"] != "") 
-		{ $mensaje .= utf8_decode("<b>Teléfono: </b>" . $mail_telefono)."<br />";  }
+    $mensaje .= utf8_decode("<b>Teléfono: </b>" . $mail_telefono)."<br />"; 
 		
 	$mensaje .= "<b>Mensaje:</b><br />" . utf8_decode($mail_mensaje);
-	$mensaje .= "<br /><br /><b>IP: </b><br />" . getRealIP();
+	$mensaje .= "<br /><br /><b>IP: </b><br />" . getIP();
 	
 	
 	
@@ -73,9 +67,8 @@ include("includes/sendmail/class.smtp.php");
 
 
     
-    if($correcto) {
+    if($correcto) 
         echo '<script>alert("Su mensaje ha sido enviado satisfactoriamente")</script>';
-    }
     
     }  
     else
@@ -92,7 +85,7 @@ include("includes/sendmail/class.smtp.php");
       <div class="titulo-enorme-oscuro color-jya"><span class="color-jya-rojo">C</span>ONTACTO</div>
       <span style="padding: 10px 20px; position: absolute; top: 0; right: 20px;"> <img src="img/jean_logo_small.png" width="80" /> </span>
       <hr class="faded"/>
-      <div class="row"  style="margin: 0 0 0 30px; " >
+      <div class="row" >
       <form class="form-horizontal" method="post" action="contacto.php">
         <input name="token" type="hidden" value="<?PHP echo $_SESSION["etoken"]; ?>">
         <fieldset>
