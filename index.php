@@ -2,17 +2,6 @@
 <div class="container marketing">
   <hr class="fadded" />
   <div class="row slider-proyectos"> 
-    
-    <div class="span4">
-      <div class="bg-grad-gris">
-        <h2 class="slider-proyectos-titulo"><span class="color-jya-rojo">Ú</span>ltimos proyectos</h2>
-      </div>
-      <div id="default_slider">
-        <nav> <a href="#" id="gallery-prev">anterior</a> <a href="#" id="gallery-next">siguiente</a> </nav>
-      </div>
-      <div style="clear: both;"></div>
-    </div>
-    <div class="span1"> </div>
     <div class="span7 contenidos-jasab"> <b class="color-jya fuente-jasab">Jean <span class="color-jya-rojo fuente-small"> & </span> Asab</b> es el resultado de un conjunto de esfuerzos y dedicación. Es ejemplo de una 
       empresa en mejora continua dentro del mantenimiento industrial, consolidándose  como una empresa líder en la región.<br />
       <br />
@@ -50,9 +39,21 @@
         </q> </div>
       <br />
     </div>
+    <div class="span1"> </div>
+    <div class="span4">
+      <div class="bg-grad-gris">
+        <h2 class="slider-proyectos-titulo"><span class="color-jya-rojo">Ú</span>ltimos proyectos</h2>
+      </div>
+      <div id="default_slider">
+        <nav> <a href="#" id="gallery-prev">anterior</a> <a href="#" id="gallery-next">siguiente</a> </nav>
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+
+
   </div>
 </div>
-</div>
+
 <hr class="faded" />
 <br />
 <?php include('includes/footer.php'); ?>
